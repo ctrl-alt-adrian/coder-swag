@@ -33,22 +33,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IsK-Te-nFg">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IsK-Te-nFg">
                                 <rect key="frame" x="0.0" y="69.5" width="375" height="533.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="126" id="EqU-TH-AHY" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="126" id="EqU-TH-AHY" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="126"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EqU-TH-AHY" id="RBH-OY-fNX">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="125.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EqU-TH-AHY" id="RBH-OY-fNX">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="126"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="rrj-nL-LdL">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="125.5"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="rrj-nL-LdL">
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="119.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="133.5" id="v4b-rR-UmS"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9D-e0-IRd">
-                                                    <rect key="frame" x="109" y="49" width="156" height="28"/>
+                                                    <rect key="frame" x="109" y="-14" width="156" height="28"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="156" id="UIg-MZ-ku7"/>
                                                         <constraint firstAttribute="height" constant="28" id="bGJ-rM-5zo"/>
@@ -60,11 +63,11 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="o9D-e0-IRd" firstAttribute="centerX" secondItem="RBH-OY-fNX" secondAttribute="centerX" id="7wu-HX-c2H"/>
-                                                <constraint firstItem="rrj-nL-LdL" firstAttribute="top" secondItem="RBH-OY-fNX" secondAttribute="top" id="Cbf-FK-8Vz"/>
                                                 <constraint firstAttribute="trailing" secondItem="rrj-nL-LdL" secondAttribute="trailing" id="Mqq-xA-bsN"/>
                                                 <constraint firstItem="o9D-e0-IRd" firstAttribute="centerY" secondItem="RBH-OY-fNX" secondAttribute="centerY" id="P1n-pM-JLf"/>
-                                                <constraint firstAttribute="bottom" secondItem="rrj-nL-LdL" secondAttribute="bottom" id="gdX-Xe-bsx"/>
                                                 <constraint firstItem="rrj-nL-LdL" firstAttribute="leading" secondItem="RBH-OY-fNX" secondAttribute="leading" id="hOq-60-TQb"/>
+                                                <constraint firstAttribute="bottom" secondItem="rrj-nL-LdL" secondAttribute="bottom" constant="3" id="iAh-Qy-6Cu"/>
+                                                <constraint firstItem="rrj-nL-LdL" firstAttribute="top" secondItem="RBH-OY-fNX" secondAttribute="top" constant="3" id="nMw-47-hZx"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
